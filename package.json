@@ -1,0 +1,28 @@
+{
+  "name": "mccondochie.com",
+  "version": "1.0.0",
+  "description": "mccondochie.com site",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielmccondochie/mccondochie.git"
+  },
+  "keywords": [
+    "mccondochie",
+    "site",
+    "web",
+    "node",
+    "npm",
+    "react",
+    "redux"
+  ],
+  "author": "Daniel McCondochie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielmccondochie/mccondochie/issues"
+  },
+  "homepage": "https://github.com/danielmccondochie/mccondochie#readme"
+}
