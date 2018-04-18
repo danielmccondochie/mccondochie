@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sh ./build.sh
 sudo docker build -t kabuto/mccondochie .
 sudo docker push kabuto/mccondochie
 sudo docker stop mccondochie | true
