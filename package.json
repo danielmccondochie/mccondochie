@@ -1,28 +1,27 @@
 {
-  "name": "mccondochie.com",
+  "name": "mccondochie",
   "version": "1.0.0",
-  "description": "mccondochie.com site",
+  "description": "mccondochie.com",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danielmccondochie/mccondochie.git"
+    "url": "https://github.com/danielmccondochie/mccondochie"
   },
-  "keywords": [
-    "mccondochie",
-    "site",
-    "web",
-    "node",
-    "npm",
-    "react",
-    "redux"
-  ],
+  "keywords": [],
   "author": "Daniel McCondochie",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/danielmccondochie/mccondochie/issues"
+  "dependencies": {
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-scripts": "1.1.4"
   },
-  "homepage": "https://github.com/danielmccondochie/mccondochie#readme"
+  "scripts": {                 
+    "start": "react-scripts start", 
+    "build": "react-scripts build", 
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"  
+  } 
 }
