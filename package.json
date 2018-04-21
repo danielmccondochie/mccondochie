@@ -4,7 +4,13 @@
   "description": "mccondochie.com",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "react-scripts start",
+    "test": "react-scripts test --env=jsdom",
+    "build": "react-scripts build",
+    "deploy": "./scripts/deploy.sh",
+    "eject": "react-scripts eject",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
   "repository": {
     "type": "git",
@@ -16,13 +22,7 @@
   "dependencies": {
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
-    "react-scripts": "1.1.4"
-  },
-  "scripts": {                 
-    "start": "react-scripts start",
-    "test": "react-scripts test --env=jsdom",
-    "build": "react-scripts build", 
-    "deploy": "./scripts/deploy.sh",
-    "eject": "react-scripts eject"
-  } 
+    "react-scripts": "1.1.4",
+    "react-styleguidist": "^7.0.8"
+  }
 }
