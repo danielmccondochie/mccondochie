@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import Search from './components/search/Search'
+import Encrypt from './components/encrypt/Encrypt'
+import Decrypt from './components/decrypt/Decrypt'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-	<Search />
+	    <Encrypt />
+	    <Decrypt />
       </div>
     );
   }
