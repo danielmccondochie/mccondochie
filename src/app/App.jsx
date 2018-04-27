@@ -6,9 +6,13 @@ import Decrypt from './components/decrypt/Decrypt'
 class App extends Component {
   render() {
     return (
-      <div className="App">
-	    <Encrypt />
-	    <Decrypt />
+      <div className="App row">
+          <div className="col-md-6">
+	        <Encrypt />
+          </div>
+          <div className="col-md-6">
+	        <Decrypt />
+          </div>
       </div>
     );
   }
