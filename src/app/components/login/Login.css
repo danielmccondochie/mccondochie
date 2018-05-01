@@ -1,0 +1,99 @@
+
+
+#usernameTextbox {
+    border-radius: 0;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+}
+
+#usernameTextbox:focus {
+    box-shadow: none;
+    border-color: coral;
+}
+
+#passwordTextbox {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#passwordTextbox:focus {
+    box-shadow: none;
+    border-color: coral;
+}
+
+#secretTextbox {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#secretTextbox:focus {
+    box-shadow: none;
+    border-color: coral;
+}
+
+#secretOpenButton {
+    border-radius: 0;
+    border: none;
+    color: coral;
+}
+
+#secretOpenButton:hover {
+    background-color: transparent;
+    border-color: #ffac6c;
+    color: #ffac6c;
+    box-shadow: none
+}
+
+#secretOpenButton:focus {
+    background-color: transparent;
+    border-color: #cd6a41;
+    color: #cd6a41;
+    box-shadow: none;
+}
+
+#secretDropdown {
+    border-radius: 0;
+    border: none;
+    color: coral;
+}
+
+#secretDropdown:hover {
+    background-color: transparent;
+    border-color: #ffac6c;
+    color: #ffac6c;
+    box-shadow: none;
+}
+
+#secretDropdown:focus {
+    background-color: transparent;
+    border-color: #cd6a41;
+    color: #cd6a41;
+    box-shadow: none;
+}
+
+#loginButton {
+    border-radius: 0;
+    border-color: coral;
+    color: coral;
+}
+
+#loginButton:hover {
+    background-color: transparent;
+    border-color: #ffac6c;
+    color: #ffac6c;
+    box-shadow: none;
+}
+
+#loginButton:focus {
+    background-color: #cd6a41;
+    border-color: #ffac6c;
+    color: white;
+    box-shadow: none;
+}

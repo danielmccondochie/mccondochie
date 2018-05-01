@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
-import Encrypt from './components/encrypt/Encrypt'
-import Decrypt from './components/decrypt/Decrypt'
+import Nav from './components/nav/Nav'
+import Login from './components/login/Login'
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App row">
-          <div className="col-md-6">
-	        <Encrypt />
-          </div>
-          <div className="col-md-6">
-	        <Decrypt />
-          </div>
-      </div>
+        <div className="h-100">
+            <div id="nav">
+                <Nav />
+            </div>
+            <div id="content" className="m-auto col-md-4 d-flex align-items-center flex-column justify-content-center">
+                <Login />
+            </div>
+        </div>
     );
   }
 }

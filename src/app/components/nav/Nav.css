@@ -1,0 +1,19 @@
+
+
+#menuButton {
+    border-radius: 0;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: black;
+}
+
+#settingsButton {
+    border-radius: 0;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: black;
+}
