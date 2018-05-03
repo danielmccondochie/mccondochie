@@ -39,7 +39,7 @@ class Login extends Component {
 
     render() {
         return (
-            <Form onSubmit={this.handleSubmit}>
+            <Form id="loginForm" className="m-3" onSubmit={this.handleSubmit}>
                 <Input className="my-3" type="text" name="encryptInput" id="usernameTextbox" placeholder="Username" value={this.state.value} onChange={this.handleChange} />
                 <Input className="my-3" type="text" name="encryptInput" id="passwordTextbox" placeholder="Password" value={this.state.value} onChange={this.handleChange} />
 

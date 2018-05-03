@@ -1,12 +1,29 @@
 
-
 #menuButton {
     border-radius: 0;
     outline: none;
     border: none;
     box-shadow: none;
     background-color: transparent;
-    color: black;
+    color: lightslategray;
+}
+
+#menuButton:hover {
+    color: #ffac6c;
+}
+
+#cardMenu {
+    z-index:3;
+}
+
+#brand {
+    font-size: xx-large;
+    font-style: italic;
+    color: lightslategray;
+}
+
+#brand:hover {
+    color: #ffac6c;
 }
 
 #settingsButton {
@@ -15,5 +32,13 @@
     border: none;
     box-shadow: none;
     background-color: transparent;
-    color: black;
+    color: lightslategray;
+}
+
+#settingsButton:hover {
+    color: #ffac6c;
+}
+
+#cardSettings {
+    z-index:3;
 }

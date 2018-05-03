@@ -1,42 +1,86 @@
 import React, { Component } from 'react';
 import './Nav.css';
-import { Button, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav as nav, NavItem, NavLink } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button, Collapse, Navbar, NavbarBrand} from 'reactstrap';
 
 class Nav extends Component {
 
     constructor(props) {
         super(props);
 
-        this.toggleNavbar = this.toggleNavbar.bind(this);
+        this.toggleMenubar = this.toggleMenubar.bind(this);
+        this.toggleSettingsbar = this.toggleSettingsbar.bind(this);
         this.state = {
-            collapsed: true
+            menuCollapsed: true,
+            settingsCollapsed: true
         };
     }
 
-    toggleNavbar() {
-        this.setState({
-            collapsed: !this.state.collapsed
-        });
+    toggleMenubar() {
+
+        if (this.state.settingsCollapsed === false) {
+            this.setState({
+                settingsCollapsed: !this.state.settingsCollapsed,
+                menuCollapsed: !this.state.menuCollapsed
+            });
+        } else {
+            this.setState({
+                menuCollapsed: !this.state.menuCollapsed
+            });
+        }
     }
+
+    toggleSettingsbar() {
+
+        if (this.state.menuCollapsed === false) {
+            this.setState({
+                menuCollapsed: !this.state.menuCollapsed,
+                settingsCollapsed: !this.state.settingsCollapsed
+            });
+        } else {
+            this.setState({
+                settingsCollapsed: !this.state.settingsCollapsed
+            });
+        }
+    }
+
     render() {
         return (
-            <div>
-                <Navbar color="faded" light>
-                    <Button className="fa fa-ellipsis-v fa-lg m-1" id="menuButton" onClick={this.toggleNavbar}> </Button>
-                    <NavbarBrand href="/" className="m-auto">reactstrap</NavbarBrand>
-                    <Button className="fa fa-cog fa-lg m-1" id="settingsButton" onClick={this.toggleNavbar}> </Button>
-                    <Collapse isOpen={!this.state.collapsed} navbar>
-                        <nav navbar>
-                            <NavItem>
-                                <NavLink href="/components/">Components</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                            </NavItem>
-                        </nav>
-                    </Collapse>
-                </Navbar>
-            </div>
+            <Navbar className="d-flex justify-content-between navbar-fixed-top" color="faded" light>
+                <Button className="fa fa-user fa-lg m-1" id="menuButton" onClick={this.toggleMenubar}> </Button>
+                <NavbarBrand id="brand" href="/" className="m-auto">McCondochie</NavbarBrand>
+                <Button className="fa fa-cog fa-lg m-1" id="settingsButton" onClick={this.toggleSettingsbar}> </Button>
+                <Collapse isOpen={!this.state.menuCollapsed} navbar>
+                    <div className="d-flex align-items-start justify-content-md-start justify-content-sm-center">
+                        <div className="col-xs-10 col-sm-8 col-md-4">
+                            <Card id="cardMenu" className="">
+                                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                                <CardBody>
+                                    <CardTitle>Card title</CardTitle>
+                                    <CardSubtitle>Card subtitle</CardSubtitle>
+                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                                    <Button>Button</Button>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </div>
+                </Collapse>
+                <Collapse isOpen={!this.state.settingsCollapsed} navbar>
+                    <div className="d-flex align-items-start justify-content-md-end justify-content-sm-center">
+                        <div className="col-xs-10 col-sm-8 col-md-4">
+                            <Card id="cardMenu" className="">
+                                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                                <CardBody>
+                                    <CardTitle>Card title</CardTitle>
+                                    <CardSubtitle>Card subtitle</CardSubtitle>
+                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                                    <Button>Button</Button>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </div>
+                </Collapse>
+            </Navbar>
         );
     }
 }

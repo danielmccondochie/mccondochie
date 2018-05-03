@@ -7,12 +7,14 @@ import Login from './components/login/Login'
 class App extends Component {
   render() {
     return (
-        <div className="h-100">
-            <div id="nav">
+        <div id="root-container" className="h-100">
+            <div id="nav" className="flex-row">
                 <Nav />
             </div>
-            <div id="content" className="m-auto col-md-4 d-flex align-items-center flex-column justify-content-center">
-                <Login />
+            <div id="content" className="flex-row d-flex align-items-center justify-content-md-start justify-content-sm-center">
+                <div className="flex-column">
+                    <Login />
+                </div>
             </div>
         </div>
     );
