@@ -6,7 +6,7 @@ class Login extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {value: ''};
+        this.state = {value: 'hello'};
         this.toggleDropDown = this.toggleDropDown.bind(this);
         this.toggleSplit = this.toggleSplit.bind(this);
         this.state = {

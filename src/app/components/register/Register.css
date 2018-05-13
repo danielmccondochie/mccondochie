@@ -1,0 +1,95 @@
+
+
+#username-input {
+    border-radius: 0;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+}
+
+#username-input:focus {
+    box-shadow: none;
+    border-color: #ff8f8f;
+}
+
+#password-input {
+    border-radius: 0;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+}
+
+#password-input:focus {
+    box-shadow: none;
+    border-color: #ff8f8f;
+}
+
+#secret-input {
+    border-radius: 0;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+}
+
+#secret-input:focus {
+    box-shadow: none;
+    border-color: #ff8f8f;
+}
+
+#load-secret-input {
+    background-color: transparent;
+    color: lightcoral;
+}
+
+#load-secret-input:hover {
+    box-shadow: none;
+    color: #ff8f8f;
+}
+
+#load-secret-input:focus {
+    box-shadow: none;
+    color: #ff8f8f;
+}
+
+#login-button {
+    border-radius: 3%;
+    background-color: lightcoral;
+    color: white;
+    border: none;
+}
+
+#login-button:hover {
+    background-color: #ff8f8f;
+    border: none;
+}
+
+#login-button:focus {
+    background-color: #ff8f8f;
+    border: none;
+}
+
+#signUp-button {
+    background-color: transparent;
+    color: royalblue;
+    border: none;
+}
+
+#signUp-button:hover {
+    background-color: transparent;
+    color: #6cb7ff;
+    border: none;
+    box-shadow: none;
+}
+
+#signUp-button:focus {
+    background-color: transparent;
+    color: #6cb7ff;
+    border: none;
+    box-shadow: none;
+}
