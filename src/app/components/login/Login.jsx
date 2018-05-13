@@ -31,7 +31,7 @@ class Login extends Component {
         return (
             <div id="app-login" className="d-flex h-100 justify-content-center">
                 <div className="row align-self-center">
-                    <i id="user-icon" className="fa fa-user-secret"></i>
+                    <i id="user-icon" className="d-none d-sm-block fa fa-user-secret"></i>
                     <form id="loginForm" className="form p-1" onSubmit={this.handleSubmit}>
                         <div className="form-group">
                             <div className="form-row p-1">
