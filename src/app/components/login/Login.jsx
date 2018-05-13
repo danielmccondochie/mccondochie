@@ -49,18 +49,14 @@ class Login extends Component {
                                     <input id="secret-input" className="form-control" type="text" placeholder="Secret Key" />
                                 </div>
                                 <div className="col-1">
-                                    <button id="load-secret-input" className="btn fa fa-save fa-lg m-1" type="button"> </button>
+                                    <button id="load-secret-input" className="btn fa fa-folder-open fa-lg m-1" type="button"> </button>
                                 </div>
                             </div>
 
                         </div>
-                        <div className="form-row p-1">
-                            <div className="col-6">
-                                <button id="login-button" className="btn" type={"submit"}>Login</button>
-                            </div>
-                            <div className="col-6">
-                                <button id="signUp-button" className="btn" type={"submit"}>Sign Up</button>
-                            </div>
+                        <div className="form-row p-1 justify-content-between">
+                            <button id="login-button" className="btn ml-1" type={"submit"}>Login</button>
+                            <button id="signUp-button" className="btn" type={"submit"}>Create Account</button>
                         </div>
                     </form>
                 </div>

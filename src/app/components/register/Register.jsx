@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Nav.css';
+import './Register.css';
 
-class Nav extends Component {
+class Register extends Component {
 
     constructor(props) {
         super(props);
@@ -44,15 +44,11 @@ class Nav extends Component {
 
     render() {
         return (
-            <div id="app-nav">
-                <nav className="navbar d-flex justify-content-between bg-light navbar-fixed-top">
-                    <button id="menuButton" className="btn fa fa-user fa-lg" type="button" onClick={this.toggleMenubar}> </button>
-                    <a id="app-brand" className="navbar-brand" href="">mccondochie</a>
-                    <button id="settingsButton" className="btn fa fa-cog fa-lg" type="button" onClick={this.toggleSettingsbar}> </button>
-                </nav>
+            <div id="app-register">
+                
             </div>
         );
     }
 }
 
-export default Nav;
+export default Register;
