@@ -1,16 +1,6 @@
 import React, { Component } from 'react';
 import './Login.css';
 // import * as CryptoJS from 'crypto-js';
-import {
-    Form,
-    InputGroup,
-    InputGroupButtonDropdown,
-    Input,
-    Button,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem
-} from 'reactstrap';;
 
 class Login extends Component {
 
@@ -39,28 +29,42 @@ class Login extends Component {
 
     render() {
         return (
-            <Form id="loginForm" className="m-3" onSubmit={this.handleSubmit}>
-                <Input className="my-3" type="text" name="encryptInput" id="usernameTextbox" placeholder="Username" value={this.state.value} onChange={this.handleChange} />
-                <Input className="my-3" type="text" name="encryptInput" id="passwordTextbox" placeholder="Password" value={this.state.value} onChange={this.handleChange} />
+            <div id="app-login" className="d-flex h-100 justify-content-center">
+                <div className="row align-self-center">
+                    <i id="user-icon" className="fa fa-user-secret"></i>
+                    <form id="loginForm" className="form p-1" onSubmit={this.handleSubmit}>
+                        <div className="form-group">
+                            <div className="form-row p-1">
+                                <div className="col-12">
+                                    <input id="username-input" className="form-control" type="text" placeholder="Username" value={this.state.value} onChange={this.handleChange} />
+                                </div>
+                            </div>
+                            <div className="form-row p-1">
+                                <div className="col-12">
+                                    <input id="password-input" className="form-control" type="text" placeholder="Password" value={this.state.value} onChange={this.handleChange} />
+                                </div>
+                            </div>
+                            <div className="form-row p-1 text-center">
+                                <div className="col-10">
+                                    <input id="secret-input" className="form-control" type="text" placeholder="Secret Key" />
+                                </div>
+                                <div className="col-1">
+                                    <button id="load-secret-input" className="btn fa fa-save fa-lg m-1" type="button"> </button>
+                                </div>
+                            </div>
 
-                <InputGroup className="my-3">
-                    <Input id="secretTextbox" placeholder="Secret Key" />
-                    <InputGroupButtonDropdown addonType="prepend" isOpen={this.state.splitButtonOpen} toggle={this.toggleSplit}>
-                        <Button id="secretOpenButton" outline color="warning">Open</Button>
-                        <DropdownToggle id="secretDropdown" split outline color="warning"/>
-                        <DropdownMenu>
-                            <DropdownItem header>Header</DropdownItem>
-                            <DropdownItem disabled>Action</DropdownItem>
-                            <DropdownItem>Another Action</DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>Another Action</DropdownItem>
-                        </DropdownMenu>
-                    </InputGroupButtonDropdown>
-                </InputGroup>
-
-                <Button className="my-3" id="loginButton" outline color="warning" type={"submit"}>Login</Button>
-                <Button className="m-3" id="signUpButton" color="link" type={"submit"}>Sign Up</Button>
-            </Form>
+                        </div>
+                        <div className="form-row p-1">
+                            <div className="col-6">
+                                <button id="login-button" className="btn" type={"submit"}>Login</button>
+                            </div>
+                            <div className="col-6">
+                                <button id="signUp-button" className="btn" type={"submit"}>Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         );
     }
 }

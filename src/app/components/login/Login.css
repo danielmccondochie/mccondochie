@@ -1,9 +1,5 @@
 
-#loginForm {
-    z-index: 0;
-}
-
-#usernameTextbox {
+#username-input {
     border-radius: 0;
     outline: none;
     border-top: none;
@@ -12,91 +8,87 @@
     box-shadow: none;
 }
 
-#usernameTextbox:focus {
+#username-input:focus {
     box-shadow: none;
-    border-color: lightslategray;
+    border-color: #ff8f8f;
 }
 
-#passwordTextbox {
+#password-input {
     border-radius: 0;
+    outline: none;
     border-top: none;
     border-left: none;
     border-right: none;
-}
-
-#passwordTextbox:focus {
     box-shadow: none;
-    border-color: lightslategray;
 }
 
-#secretTextbox {
+#password-input:focus {
+    box-shadow: none;
+    border-color: #ff8f8f;
+}
+
+#secret-input {
     border-radius: 0;
+    outline: none;
     border-top: none;
     border-left: none;
     border-right: none;
-}
-
-#secretTextbox:focus {
-    box-shadow: none;
-    border-color: lightslategray;
-}
-
-#secretOpenButton {
-    border-radius: 0;
-    border: none;
-    color: lightslategray;
-}
-
-#secretOpenButton:hover {
-    background-color: transparent;
-    border-color: #ffac6c;
-    color: #ffac6c;
-    box-shadow: none
-}
-
-#secretOpenButton:focus {
-    background-color: transparent;
-    border-color: #cd6a41;
-    color: #cd6a41;
     box-shadow: none;
 }
 
-#secretDropdown {
-    border-radius: 0;
-    border: none;
-    color: lightslategray;
-}
-
-#secretDropdown:hover {
-    background-color: transparent;
-    border-color: #ffac6c;
-    color: #ffac6c;
+#secret-input:focus {
     box-shadow: none;
+    border-color: #ff8f8f;
 }
 
-#secretDropdown:focus {
+#load-secret-input {
     background-color: transparent;
-    border-color: #cd6a41;
-    color: #cd6a41;
+    color: lightcoral;
+}
+
+#load-secret-input:hover {
     box-shadow: none;
+    color: #ff8f8f;
 }
 
-#loginButton {
-    border-radius: 0;
-    border-color: lightslategray;
-    color: lightslategray;
-}
-
-#loginButton:hover {
-    background-color: transparent;
-    border-color: #ffac6c;
-    color: #ffac6c;
+#load-secret-input:focus {
     box-shadow: none;
+    color: #ff8f8f;
 }
 
-#loginButton:after {
-    background-color: #ffd2a0;
-    border-color: #ffac6c;
+#login-button {
+    border-radius: 3%;
+    background-color: lightcoral;
     color: white;
+    border: none;
+}
+
+#login-button:hover {
+    background-color: #ff8f8f;
+    border: none;
+}
+
+#login-button:focus {
+    background-color: #ff8f8f;
+    border: none;
+}
+
+#signUp-button {
+    background-color: transparent;
+    color: royalblue;
+    border: none;
+}
+
+#signUp-button:hover {
+    background-color: transparent;
+    color: #6cb7ff;
+    border: none;
+    box-shadow: none;
+}
+
+#signUp-button:focus {
+    background-color: transparent;
+    color: #6cb7ff;
+    border: none;
     box-shadow: none;
 }

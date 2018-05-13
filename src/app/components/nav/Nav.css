@@ -1,29 +1,29 @@
 
+#appnav {
+    box-shadow: 0 0 1px black;
+}
+
 #menuButton {
     border-radius: 0;
     outline: none;
     border: none;
     box-shadow: none;
     background-color: transparent;
-    color: lightslategray;
+    color: lightcoral;
 }
 
 #menuButton:hover {
-    color: #ffac6c;
+    color: #ff8f8f;
 }
 
-#cardMenu {
-    z-index:3;
+#app-brand {
+    color: lightcoral;
+    font-weight: bold;
 }
 
-#brand {
-    font-size: xx-large;
-    font-style: italic;
-    color: lightslategray;
-}
+#app-brand:hover {
+    color: #ff8f8f;
 
-#brand:hover {
-    color: #ffac6c;
 }
 
 #settingsButton {
@@ -32,13 +32,9 @@
     border: none;
     box-shadow: none;
     background-color: transparent;
-    color: lightslategray;
+    color: lightcoral;
 }
 
 #settingsButton:hover {
-    color: #ffac6c;
-}
-
-#cardSettings {
-    z-index:3;
+    color: #ff8f8f;
 }
